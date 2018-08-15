@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduction to Jumbotron</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container-fluid">
+            <h1>WELCOME HOME</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ducimus id libero quos repudiandae. A aliquid
+                aspernatur consectetur culpa doloremque doloribus excepturi, itaque neque provident, quae, quisquam rerum sequi temporibus.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae consequatur ea esse explicabo illum laboriosam
+            nemo neque nulla pariatur porro possimus, quaerat ratione reiciendis, rem, sapiente sunt ut! Error.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at beatae consectetur distinctio dolorem doloribus ducimus eligendi,
+            explicabo inventore libero maiores non perspiciatis praesentium provident recusandae repellat rerum vitae voluptatem?</p>
+    </div>
+</body>
+</html>
