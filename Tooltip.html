@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tooltip</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--TOOLTIP-->
+
+    <!--The Tooltip component is small pop-up box that appears when the user moves the mouse pointer over an element:-->
+    <div class="container">
+        <h3>Introduction to Tooltip</h3>
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="It's Friday!">Point me</a>
+    </div>
+
+    <!--Tooltips must be initialized with jQuery: select the specified element and call the tooltip() method.-->
+    <!--The following code will enable all tooltips in the document-->
+
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+</body>
+</html>

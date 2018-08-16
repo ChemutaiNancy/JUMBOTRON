@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Filters</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="jQuery/jQuery.min.js"></script>
+</head>
+<body>
+    <div class="container mt-3">
+    <h2>Table Filters</h2>
+    <input type="text" class="form-control" id="input" placeholder="Search" >
+
+        <br>
+        <!--id="tbl"-id in the table-->
+
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>FIRSTNAME</th>
+                <th>LASTNAME</th>
+                <th>EMAIL</th>
+            </tr>
+            </thead>
+
+            <tbody id="tbl">
+            <tr>
+                <td>Nancy</td>
+                <td>Chemutai</td>
+                <td>nancychemu@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>Gloria</td>
+                <td>Kiprotich</td>
+                <td>glochemu@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>Dave</td>
+                <td>Muriuki</td>
+                <td>laconicmd5@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>Bonnie</td>
+                <td>Munyalo</td>
+                <td>bonnie.munyalo@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>Gythan</td>
+                <td>Munga</td>
+                <td>gythan.munga@yahoo.com</td>
+            </tr>
+
+            <tr>
+                <td>Sam</td>
+                <td>Njoroge</td>
+                <td>njoro@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>Miriam</td>
+                <td>Mweni</td>
+                <td>mwenim@yahoo.com</td>
+            </tr>
+
+            <tr>
+                <td>Elsie</td>
+                <td>Rutere</td>
+                <td>elosyrutere@ymail.com</td>
+            </tr>
+
+            <tr>
+                <td>Joyce</td>
+                <td>Atieno</td>
+                <td>joyotieno@yahoo.com</td>
+            </tr>
+
+            <tr>
+                <td>Edward</td>
+                <td>Koome</td>
+                <td>edukoome@gmail.com</td>
+            </tr>
+
+
+            </tbody>
+        </table>
+
+    </div>
+
+        <script>
+            $(document).ready( function () {
+                $("#input").on("keyup", function () {
+                    var value = $(this).val().toLowerCase();
+                    $("#tbl tr").filter(function () {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                    })
+                })
+            } );
+        </script>
+
+   </body>
+</html>

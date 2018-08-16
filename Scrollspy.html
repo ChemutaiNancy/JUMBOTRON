@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scrollspy</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="jQuery/jQuery.min.js"></script>
+
+    <style>
+        body
+        {
+            position: relative;
+        }
+    </style>
+</head>
+<!--scrollable area-->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
+
+        <ul class="navbar">
+            <li><a href="#part1">Part 1</a></li>
+        </ul>
+
+    </nav>
+    <div id="part1">
+        <h1>Part 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, cum cupiditate error explicabo in iste magni non quasi reiciendis veritatis. Ab ad dolorum, eligendi eveniet fugit impedit perspiciatis sequi temporibus.</p>
+    </div>
+</body>
+</html>
